@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
+  },
+  "editor.fontFamily": "'Hack Nerd Font Mono','FiraCode Nerd Font','JetBrains Mono'",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "underline",
+  "prettier.arrowParens": "avoid",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "onFocusChange"
+}
