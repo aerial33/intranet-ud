@@ -11,6 +11,16 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
+  // Activer le linting avec informations de types (required par certaines règles)
+  {
+    languageOptions: {
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        project: ["./tsconfig.json"],
+        tsconfigRootDir: __dirname,
+      },
+    },
+  },
   {
     rules: {
       "prefer-arrow-callback": ["warn"],
